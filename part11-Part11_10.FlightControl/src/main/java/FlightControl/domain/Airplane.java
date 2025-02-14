@@ -1,10 +1,16 @@
 package FlightControl.domain;
 
 public class Airplane {
-    public String id;
-    public int capacity;
+    private final String id;
+    private final int capacity;
 
     public Airplane(String id, int capacity) {
+        if (id == null || id.trim().isEmpty()) {
+            throw new IllegalArgumentException("ID cannot be null or empty");
+        }
+        if (capacity <= 0) {
+            throw new IllegalArgumentException("Capacity must be positive");
+        }
         this.id = id;
         this.capacity = capacity;
     }
@@ -19,7 +25,6 @@ public class Airplane {
 
     @Override
     public String toString() {
-        return id + " (" + capacity +
-                " capacity)";
+        return String.format("%s (Capacity: %d passengers)", id, capacity);
     }
 }
