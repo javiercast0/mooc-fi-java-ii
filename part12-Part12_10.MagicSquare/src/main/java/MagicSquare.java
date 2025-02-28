@@ -1,4 +1,4 @@
-
+    
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -17,15 +17,70 @@ public class MagicSquare {
 
     // implement these three methods
     public ArrayList<Integer> sumsOfRows() {
-        return new ArrayList<>();
+        ArrayList<Integer> listOfRows = new ArrayList<>();
+        for (int row = 0 ; row < this.square.length ; row++){
+            int sum = 0;
+            for (int column = 0 ; column < this.square[row].length ; column++){
+                sum += this.square[row][column];
+            }
+            listOfRows.add(sum);
+        }
+        
+        return listOfRows;
     }
 
     public ArrayList<Integer> sumsOfColumns() {
-        return new ArrayList<>();
+        ArrayList<Integer> listOfColumns = new ArrayList<>();
+    
+        // Verificar si la matriz está vacía
+        if (this.square == null || this.square.length == 0) {
+            return listOfColumns; // Devuelve una lista vacía si no hay filas
+        }
+    
+        // Obtener el número de columnas (asumimos que todas las filas tienen el mismo número de columnas)
+        int numColumns = this.square[0].length;
+    
+        // Recorrer cada columna
+        for (int column = 0; column < numColumns; column++) {
+            int sum = 0;
+    
+            // Recorrer cada fila dentro de la columna actual
+            for (int row = 0; row < this.square.length; row++) {
+                // Verificar si la fila tiene la columna actual
+                if (column < this.square[row].length) {
+                    sum += this.square[row][column];
+                }
+            }
+    
+            listOfColumns.add(sum); // Añadir la suma de la columna actual a la lista
+        }
+    
+        return listOfColumns;
     }
 
     public ArrayList<Integer> sumsOfDiagonals() {
-        return new ArrayList<>();
+        ArrayList<Integer> listOfDiagonals = new ArrayList<>();
+        int sumPrimary = 0; // Suma de la diagonal principal
+        int sumSecondary = 0; // Suma de la diagonal secundaria
+    
+        // Verificar si la matriz es cuadrada
+        if (this.square == null || this.square.length == 0 || this.square.length != this.square[0].length) {
+            throw new IllegalArgumentException("La matriz debe ser cuadrada y no nula.");
+        }
+    
+        int n = this.square.length; // Tamaño de la matriz (n x n)
+    
+        // Recorrer la matriz para sumar las diagonales
+        for (int i = 0; i < n; i++) {
+            sumPrimary += this.square[i][i]; // Diagonal principal
+            sumSecondary += this.square[i][n - 1 - i]; // Diagonal secundaria
+        }
+    
+        // Añadir las sumas a la lista
+        listOfDiagonals.add(sumPrimary);
+        listOfDiagonals.add(sumSecondary);
+    
+        return listOfDiagonals;
     }
 
     // ready-made helper methods -- don't touch these
