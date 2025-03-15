@@ -1,6 +1,6 @@
 Spanish
 
-Este repositorio contiene las soluciones al curso "Java Programming I" de la Universidad de Helsinki. Lo he creado para tener los ejercicios disponibles en caso de que necesite revisarlos en el futuro y para ayudar a quienes puedan sentirse atascados con algún ejercicio, brindándoles un ejemplo como referencia.
+Este repositorio contiene las soluciones al curso "Java Programming II" de la Universidad de Helsinki. Lo he creado para tener los ejercicios disponibles en caso de que necesite revisarlos en el futuro y para ayudar a quienes puedan sentirse atascados con algún ejercicio, brindándoles un ejemplo como referencia.
 
 Importante: Este repositorio no está pensado para copiar y pegar las soluciones directamente. El aprendizaje real proviene de trabajar los problemas por tu cuenta, incluso si lleva horas resolver un ejercicio. Copiar soluciones de internet no solo va en contra del propósito del aprendizaje, sino que también limita tu progreso. Utiliza estas soluciones como guía, no como un atajo.
 English
