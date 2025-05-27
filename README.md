@@ -5,6 +5,9 @@ Este repositorio contiene las soluciones al curso "Java Programming I" de la Uni
 
 Importante: Este repositorio no está pensado para copiar y pegar las soluciones directamente. El aprendizaje real proviene de trabajar los problemas por tu cuenta, incluso si lleva horas resolver un ejercicio. Copiar soluciones de internet no solo va en contra del propósito del aprendizaje, sino que también limita tu progreso. Utiliza estas soluciones como guía, no como un atajo.
 
+# ¿Qué tal fue el curso?
+Sinceramente el mejor curso de Java disponible, cuesta creer que sea gratuito, una cantidad grandísima de ejercicios y todo muy bien explicado y con pautas, me ha dado la motivación para esforzarme día tras día.
+
 # English
 This repository contains the solutions to the "Java Programming I" course from the University of Helsinki. I created it to have the exercises readily available for future review and to help those who might feel stuck on an exercise by providing a reference example.
 
